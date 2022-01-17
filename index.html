@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Tip Calculator</h1>
+        <div class="box" id="box-1">
+            <label for="bill">How much was your bill?</label>
+            <input type="number" name="bill" id="bill_amount" placeholder="Bill Amount" required> &nbsp;$
+        </div>
+
+        <div class="box" id="box-2">
+            <label for="service">How was your service?</label>
+            <select name="service" id="service" required>
+                <option value="level" selected disabled>Select the level of Service</option>
+                <option value="0.3">Outstanding 30%</option>
+                <option value="0.2">Better 20%</option>
+                <option value="0.1">Good 10%</option>
+                <option value="0">Poor 0%</option>
+            </select>
+        </div>
+
+        <div class="box" id="box-3">
+            <label for="people">How many people are sharing the bill?</label>
+            <input type="number" name="people" id="people" placeholder="Enter number of people" required> People
+        </div>
+
+        <div class="box" id="box-4">
+            <button type="button" id="btnClick" class="btn">Calculate</button>
+        </div>
+
+        <div class="box" id="totaltip">
+            <p>TIP AMOUNT :</p>
+            <p id="dollar">$</p>
+            <p id="tip">0.00</p>
+        </div>
+        <div id="each">
+            <p>EACH.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
